@@ -1,1 +1,70 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="chat-container">
+
+    <header class="chat-header">
+      <div class="bot-info">
+        <div class="bot-avatar">✦</div>
+        <div>
+          <h2>AI Assistant</h2>
+          <p><span class="status-dot"></span> Online</p>
+        </div>
+      </div>
+
+      <button id="clearBtn" class="clear-btn" title="Clear conversation">
+        ↻
+      </button>
+    </header>
+
+    <section id="chatMessages" class="chat-messages">
+
+      <div class="message bot-message">
+        <div class="message-bubble">
+          Hello! I'm your AI assistant. How can I help you today?
+        </div>
+      </div>
+
+    </section>
+
+    <div id="typingIndicator" class="typing-indicator hidden">
+      AI is thinking...
+    </div>
+
+    <form id="chatForm" class="chat-input-area">
+
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Message the AI..."
+        autocomplete="off"
+        maxlength="4000"
+        required
+      >
+
+      <button type="submit" id="sendBtn" title="Send message">
+        ↑
+      </button>
+
+    </form>
+
+    <p class="footer-text">
+      AI can make mistakes. Verify important information.
+    </p>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
